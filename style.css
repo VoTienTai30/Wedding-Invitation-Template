@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+}
+
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    padding: 8px 16px;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.nav-bar:hover {
+    opacity: 1;
+}
+
+.nav-bar a {
+    color: #000;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    padding: 8px 16px;
+    font-weight: 400;
+}
+
+.nav-bar a:hover {
+    background: #ccc;
+}
+
+.header-container {
+    background-image: url(./img/wedding_couple.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.header-container h1 {
+    text-align: center;
+    font-size: 64px;
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.header-container h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.introduce, .wedding-detail {
+    padding: 64px 16px;
+    background: #FFDDDD;
+    filter: grayscale(50%);
+}
+
+.introduce-content, .wedding-detail-content {
+    max-width: 980px;
+    margin: auto;
+}
+
+.introduce-content h1 {
+    color: #757575;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.introduce-content img {
+    margin: 32px 0;
+    filter: grayscale(50%);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.introduce-content span {
+    margin: 15px 0;
+    line-height: 2;
+    font-style: italic;
+    font-size: 15px;
+    filter: grayscale(50%);
+    display: inline-block;
+}
+
+#details-btn {
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#details-btn a:hover {
+    color: #000;
+    background: #ccc;
+}
+
+.introduce-content a {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 2;
+}
+
+.flower {
+    height: 100vh;
+    background-image: url(./img/flowers.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.flower h1 {
+    color: #fff;
+    font-size: 64px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.flower h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.wedding-detail h1 {
+    text-align: center;
+    line-height: 1.8;
+    color: #757575;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.wedding-detail-content img {
+    width: 100%;
+    margin: 64px 0;
+    filter: grayscale(50%);
+    border-radius: 4px;
+}
+
+.time-place {
+    display: flex;
+}
+
+#when, #where {
+    width: 50%;
+    text-align: center;
+}
+
+#when h2, #where h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#when p, #where p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    margin: 15px 0;
+}
+
+.rsvp-container {
+    padding: 64px 16px;
+    background-color: #ffdddd;
+    text-align: center;
+}
+
+.rsvp-container h1 {
+    Font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.rsvp-container p {
+    Font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    margin: 18px 0;
+    letter-spacing: 4px;
+}
+
+.rsvp-container input {
+    color: #fff;
+    background-color: #f44336;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 60px;
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 2;
+    margin-bottom: 24px;
+}
+
+.rsvp-container input:hover {
+    color: #000;
+    background: #ccc;
+    opacity: 1;
+}
+
+.footer {
+    padding: 31px 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 22px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    z-index: 2;
+    display: none;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.form {
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin: auto;
+    max-width: 600px;
+    padding: 32px 48px;
+    text-align: center;
+    box-sizing: border-box;
+    animation: zoom-in ease 0.6s;
+}
+
+.form h1 {
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.form p {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    line-height: 1.7;
+    width: 96%;
+}
+
+#italic {
+    font-style: italic;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    display: flex;
+}
+
+#green, #red {
+    width: 50%;
+    border: 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+#green {
+    background: #4CAF50;
+}
+
+#red {
+    background: #f44336;
+}
+
+#green:hover, #red:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
